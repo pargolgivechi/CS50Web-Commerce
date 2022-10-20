@@ -19,10 +19,11 @@ These are accomplished by using multiple database models to link records togethe
 1. python
 2. django
 3. sqlite
-4. html
-5. css
-6. Bootstrap
-7. databases
+4. databases
+5. html
+6. css
+7. Bootstrap
+
 
 
 Detailed requirements can be found here: https://cs50.harvard.edu/web/2020/projects/2/commerce/
