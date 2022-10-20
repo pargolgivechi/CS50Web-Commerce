@@ -1,0 +1,27 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <div class="container-fluid mb-5">
+        <h1>Active Listings</h1>
+        <div class="row g-4 mt-4 ml-2 mr-2">
+            {% for listing in listings %}
+                <div class="col-4">
+                    <a class="text-decoration-none" href="{% url 'listing' listing.id %}" style="color: black;" >
+                        <div class="p-3 border bg-light mb-4" style="width: 450px; height: 450px;">  
+                            <div class="mx-auto" style="width: 300px; height: 210px;">
+                                <img src="{{ listing.url }}" alt="image" style="width: 300px; height: 210px">
+                            </div>
+                            <div class="text-center mt-3 mb-3">
+                                <strong>{{ listing.title|capfirst }}</strong>
+                            </div>
+                            <div class="mx-auto mb-1" style="width: auto; height: 110px;">
+                                <h6>{{ listing.description }}</h6>
+                            </div>
+                            <strong>Starting Price:</strong> ${{ listing.starting_price }}
+                        </div> 
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
