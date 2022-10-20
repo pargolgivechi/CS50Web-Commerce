@@ -1,5 +1,7 @@
 ## CS50 Project 2 Commerce
 
+This is the project I made which is an e-commerce auction site that will allow users to post auction listings, place bids on listings, comment on those listings, and add listings to a watchlist.
+
 This ebay-type web application allows users to register, log in and out, browse listed items and create new ones.
 
 The site allows users to view all current and active listings as well as a group of listings in a category. The site also allows logged in users to create new listings and edit their own listings and also comment on all listings as well as bid on other's listing.
